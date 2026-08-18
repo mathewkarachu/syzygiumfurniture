@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'cormorant';
+    src: url("fonts/cormorant/Cormorant_Install_v0.2/CormorantInfant-Regular.otf");
+}
+
+@font-face {
+    font-family: "manrope";
+    src: url("fonts/manrope/manrope-regular.otf");
+}
+body{
+    background-color: #FAFAF7;
+}
+
+header{
+    position: sticky;
+    top:0;
+    z-index: 9999;
+     background-color: #F7F5EF;
+    border-radius: 50px;
+    padding: 1rem;
+   
+    
+     
+  
+  
+}
+nav {
+   
+    
+    
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    
+    justify-content: space-between;
+  
+
+}
+nav ul .nav-icon{
+    display: flex;
+    justify-content: space-around;
+    width: 8rem;
+}
+
+
+.landing .landing-content {
+    font-family: "cormorant";
+    font-size: 5.2rem;
+    text-align: left;
+    /* transform: translateY(-60%); */
+
+   
+    
+    
+    color: #F7F5EF;
+    margin-left:5%;
+}
+.landing {
+    margin-top: 0;
+    background:  linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url('images/Living/pexels-slipcoverkas-27471120.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+  
+   align-items: center;
+
+   
+}
+.landing button{
+    font-family: "manrope";
+    display: block;
+    margin: auto;
+    padding: 1.5rem 3.6rem;
+    
+    border:none;
+    border-radius: 50px;
+    transform: translateY(-140%);
+    font-size: clamp(1.5rem, 0.75rem + 0.2vw, 3rem);
+    letter-spacing: 0.06em;
+    background-color: #0d3e2cd4;
+    color: #F7F5EF;
+    font-weight: 600;
+}
+.section-title{
+    font-family: "manrope";
+    color:#1D2420 ;
+    margin: 5%;
+}
+.card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+     width: 100%;
+    aspect-ratio: 4/ 5;
+    object-fit: cover;
+   
+
+ 
+}
+.card{
+    width: 42%;
+    display: block;
+    margin: 0, auto;
+    
+    border-radius: 25px;
+    padding: .4rem;
+    text-align: center;
+    background-color:  #F5F5F0 ;
+      position: relative;
+      z-index: 1;
+          background-color: #F5F5F0;
+    border: 1px solid #E3E7E4;
+    box-shadow: 0 1rem 2rem rgba(29, 36, 32, 0.12);
+
+   
+
+  
+}
+.shop-category a{
+    text-decoration: none;
+    color: #1D2420;
+    font-family: "cormorant";
+    font-size: clamp(1.8rem, 0.9rem + 0.5vw, 2.4rem);
+    font-weight: 600;
+    padding: 0.5rem;
+    text-align: center;
+
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: space-evenly;
+    
+ 
+   
+}
+.fix{
+  border: 1px solid #1F6B4F;  
+    /* margin: 2rem; */
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top:-.7rem;
+    /* bottom:-1rem; */
+    left: -.2rem;
+    z-index: 2;
+   
+
+    background-color:#1F6B4F ;
+   
+
+    box-shadow: 0 1rem 1rem rgba(18, 87, 41, 0.15);
+
+   
+}
+/* .fix{
+    border: 2px solid blanchedalmond;
+} */
+
+.footer{
+    margin-top:20%;
+    padding: 3rem;
+    color: #F7F5EF ;
+    font-size: 1.5rem;
+   
+    background-color:#0d4a36 ;
+    
+}
+
+.footer a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color:#F7F5EF;
+    font-style: italic;
+    margin-left: 1.8rem;
+}
+
+.footer h3{
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 2.1rem;
+    font-weight: 600;
+    font-style: oblique;
+    text-transform:capitalize;
+}
+.footer h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    font-style:oblique;
+    
+}
+.footer q{
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.connect{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.foot-icons{
+
+    /* gap: 5rem; */
+    
+    margin-top: 10%;
+    height: 3rem;
+    width: 3rem;
+    fill: beige;
+    /* margin: 3%;
+     */
+}
+.social-icons{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+
+
+}
+.end{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration:wavy;
+    color:#F7F5EF ;
+    background-color: #1D2420;
+    font-family: "manrope";
+    font-style: italic;
+   
+}
