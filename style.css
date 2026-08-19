@@ -53,9 +53,9 @@ nav ul .nav-icon{
 
 .landing .landing-content {
     font-family: "cormorant";
-    font-size: 4.2rem;
+    font-size: 3.5rem;
     text-align: left;
-    /* transform: translateY(-60%); */
+    transform: translateY(-10%);
 
    
     
@@ -81,13 +81,13 @@ nav ul .nav-icon{
     font-family: "manrope";
     display: block;
     margin: auto;
-    padding: 1.5rem 3.6rem;
+    padding: 1.2rem 3.2rem;
     
     border:none;
     border-radius: 50px;
-    transform: translateY(-140%);
-    font-size: clamp(1.5rem, 0.75rem + 0.2vw, 3rem);
-    letter-spacing: 0.06em;
+    transform: translateY(-120%);
+    font-size: clamp(1.3rem, 0.75rem + 0.2vw, 2.6rem);
+    letter-spacing: 0.04em;
     background-color: #0d3e2cd4;
     color: #F7F5EF;
     font-weight: 600;
@@ -126,13 +126,16 @@ nav ul .nav-icon{
 
   
 }
+.section-title{
+margin-bottom: 1.2rem;
+}
 .shop-category a{
     text-decoration: none;
     color: #1D2420;
     font-family: "cormorant";
-    font-size: clamp(1.8rem, 0.9rem + 0.5vw, 2.4rem);
+    font-size: clamp(1.3rem, 0.9rem + 0.5vw, 2.0rem);
     font-weight: 600;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
 
 }
@@ -181,7 +184,7 @@ nav ul .nav-icon{
 }
 
 .footer a {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color:#F7F5EF;
     font-style: italic;
@@ -191,7 +194,7 @@ nav ul .nav-icon{
 .footer h3{
     text-align: center;
     margin-bottom: 3%;
-    font-size: 2.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
     font-style: oblique;
     text-transform:capitalize;
@@ -199,21 +202,23 @@ nav ul .nav-icon{
 .footer h2{
     text-align: center;
     font-weight: bolder;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-style:oblique;
     
 }
+
 .footer q{
     text-align: center;
     display: block;
     margin: auto;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     font-style: italic;
 }
 
 .connect{
     margin-top: 5%;
     text-align: center;
+    font-size: 1rem;
 }
 
 .foot-icons{
@@ -223,7 +228,7 @@ nav ul .nav-icon{
     margin-top: 10%;
     height: 3rem;
     width: 3rem;
-    fill: beige;
+    fill: #F7F5EF;
     /* margin: 3%;
      */
 }
@@ -238,7 +243,8 @@ nav ul .nav-icon{
 .end{
     padding: 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+    word-spacing: 0.2rem;
     text-decoration:wavy;
     color:#F7F5EF ;
     background-color: #1D2420;
