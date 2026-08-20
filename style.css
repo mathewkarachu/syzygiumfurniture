@@ -29,12 +29,49 @@ header{
   
   
 }
-nav {
-   
-    
-    
-}
 
+.menu-icon{
+   border: none;
+   background-color:#F7F5EF ;
+   position: relative;
+   z-index: 10001;
+}
+.mobile-menu{
+    display: none;
+     position: fixed;
+    top:0;
+    left: -100%;
+    width: 75%;
+    height: 100dvh;
+
+    gap:1.5rem;
+    padding: 6rem 2rem 2rem;
+    background-color: #F7F5EF;
+     transition: left 0.3s ease;
+    z-index: 10000;
+}
+.mobile-menu a{
+      text-decoration: none;
+    color: #1D2420;
+    font-family: "manrope";
+    font-size: 1.2rem;
+}
+.menu-close{
+    display: none;
+}
+.active{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    
+
+}
+.menu-icon.active .menu-open {
+    display: none;
+}
+.menu-icon.active .menu-close {
+    display: block;
+}
 
 nav ul{
     display: flex;

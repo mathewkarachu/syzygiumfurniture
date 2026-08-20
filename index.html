@@ -14,7 +14,24 @@
           <ul>
 
 
-            <li class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></li>
+            <li>
+                <button type="button"  class="menu-icon" id="menuToggle">
+                    <svg class="menu-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                    <!-- x -->
+                     <svg class="menu-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+               
+                  <!-- Mobile menu content -->
+        <div class="mobile-menu" id="mobileMenu">
+            
+            <a href="/">Home</a>
+            <a href="/shop/">Shop</a>
+            <a href="/living-room/">Living Room</a>
+            <a href="/bedroom/">Bedroom</a>
+            <a href="/office/">Office</a>
+            <a href="/dining/">Dining</a>
+        </div>
+            </li>
 
 
             <li>
@@ -181,6 +198,9 @@
         </section>
       
     </footer>
+
+
+    <script src="script.js"></script>
     
 </body>
 </html>
