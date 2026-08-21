@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="login">
+    <main class="login signup">
         <section>
            <form action="">
     <h2>Syzygium Furniture</h2>
-    <h3>Welcome back</h3>
-    <h5>Sign in to your account</h5>
+    <h3>Create your account</h3>
+    <h5>Curate spaces that feel distinctly yours.</h5>
 
     <div class="input-group">
         <input
@@ -22,6 +22,15 @@
             placeholder=" "
         >
         <label for="username">Username</label>
+    </div>
+     <div class="input-group">
+        <input
+            type="email"
+            id="email"
+            required
+            placeholder=" "
+        >
+        <label for="email">Email</label>
     </div>
 
     <div class="input-group">
@@ -33,12 +42,23 @@
         >
         <label for="password">Password</label>
     </div>
+    <div class="input-group">
+        <input
+            type="password"
+            id="password"
+            required
+            placeholder=" "
+        >
+        <label for="password">Confirm Password</label>
+    </div>
+    
+   
 
-    <a href="forgot.html">Forgot password?</a>
+   
 
-    <input type="submit" value="Sign in" class="button">
+    <input type="submit" value="Create account" class="button">
 
-    <a href="signup.html">Don't have an account? Register</a>
+    <a href="login.html">Already have an account? Sign in</a>
 </form>
         </section>
     </main>

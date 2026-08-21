@@ -313,6 +313,8 @@ margin-bottom: 1.2rem;
     #19211e 50%,
     #166348 100%
 );
+
+
   
     
 }
@@ -321,7 +323,7 @@ margin-bottom: 1.2rem;
 padding: 3.5rem 3rem;
 display: flex;
 flex-direction: column;
-gap: 1rem;
+gap: 1.5rem;
 border-radius: 30px;
 
 background: #f9f9f9;
@@ -337,7 +339,7 @@ box-shadow:
     color: #1D2420;
 }
 input{
-    padding: 0.3rem;
+    padding: 0.3rem ;
 }
 .login .button{
     padding: 1rem;
@@ -388,6 +390,11 @@ input{
     -webkit-text-fill-color: transparent;
 
 }
+
+.login h5{
+    color: #51a16b;
+    font-size: 1rem;
+}
 .login a{
     color:#6B746E;
     text-decoration: none;
@@ -400,9 +407,9 @@ input{
 
  .input-group input {
     width: 100%;
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 9rem;
     border: 1px solid #E3E7E4;
-    border-radius: 12px;
+    border-radius: 20px;
     background: #FFFFFF;
     color: #1D2420;
     outline: none;
@@ -425,4 +432,21 @@ input{
     transform: translateY(-50%);
     font-size: 0.8rem;
     color: #1F6B4F;
+}
+
+
+/* signup form */
+
+
+.signup form{
+    gap: 1.2rem;
+    padding: 1rem 1.8rem;
+    
+}
+
+
+/* forgot page */
+
+.forgot-page{
+    font-family: "manrope";
 }
