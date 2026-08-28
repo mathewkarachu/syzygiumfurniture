@@ -450,3 +450,25 @@ input{
 .forgot-page{
     font-family: "manrope";
 }
+
+/* reset_email */
+
+#reset-email{
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    font-family: "manrope";
+    background-color: #1F6B4F;
+    color: #F7F5EF;
+    font-weight: 600;
+    font-size: 0.98rem;
+    text-align: center;
+    margin-top:3.7rem;
+    margin-bottom: 2.5rem;
+
+}
+.res{
+    text-align: center; 
+    padding: rem;
+    color: #126e4c;
+}

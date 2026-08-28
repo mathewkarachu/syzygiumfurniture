@@ -1,0 +1,17 @@
+
+    Syzygium Furniture
+ 
+    Hello,Karachu
+
+   we received a request to reset your password.
+   click the button below.
+
+    Reset Password
+    This reset links expires in 2 minutes.</p>
+    <p>If you didnt request this password reset,simply ignore this email.</p>
+    <p>Thankyou,</p>
+<p>Syzygium Furniture.</p>
+
+
+        <p>&copy 2026 syzygium Furniture</p>
+  
