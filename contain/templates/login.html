@@ -38,11 +38,11 @@
         <label for="password">Password</label>
     </div>
 
-    <a href="forgot.html">Forgot password?</a>
+    <a href="{% url 'forgot' %}">Forgot password?</a>
 
     <input type="submit" value="Sign in" class="button">
 
-    <a href="signup.html">Don't have an account? Register</a>
+    <a href="{% url 'register' %}">Don't have an account? Register</a>
 </form>
         </section>
     </main>

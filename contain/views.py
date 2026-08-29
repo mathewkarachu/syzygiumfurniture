@@ -10,3 +10,5 @@ def Login(request):
 def Signup(request):
     return render(request, "signup.html")
 # Create your views here.
+def forgot(request):
+    return render(request,"forgot.html")

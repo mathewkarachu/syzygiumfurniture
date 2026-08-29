@@ -4,5 +4,6 @@ from .import views
 urlpatterns = [
     path('',views.Home, name="home"),
     path("login/",views.Login,name="login"),
-    path("signup",views.Signup,name="register"),
+    path("signup/",views.Signup,name="register"),
+    path("forgot/",views.forgot, name="forgot"),
 ]
