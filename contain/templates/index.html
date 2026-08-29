@@ -1,12 +1,18 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
 </head>
+
 <body>
+    {% block content %}
+
+
     <!--HEADER-->
     <header>
         <!--NAVBAR-->
@@ -70,22 +76,22 @@
         <section class="shop-category">
             <div class="cards">
                 <div class="card" >
-                     <img src="images/Living/spacejoy-c0JoR_-2x3E-unsplash.jpg " alt="">
+                     <img src="{% static 'images/Living/spacejoy-c0JoR_-2x3E-unsplash.jpg'%} " alt="">
                      <svg class = "fix" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-armchair-icon lucide-armchair"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
                 <a href="">Living Room</a>
                 </div>
                     <div class="card">
-                     <img src="images/Bed/spacejoy-nEtpvJjnPVo-unsplash.jpg" alt="">
+                     <img src="{% static 'images/Bed/spacejoy-nEtpvJjnPVo-unsplash.jpg' %}" alt="">
 <svg class="fix" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,72H32V48a8,8,0,0,0-16,0V208a8,8,0,0,0,16,0V176H240v32a8,8,0,0,0,16,0V112A40,40,0,0,0,216,72ZM32,88h72v72H32Zm88,72V88h96a24,24,0,0,1,24,24v48Z"></path></svg>
                 <a href=""> Bed  Room </a>
                 </div>
                                 <div class="card">
-                     <img src="images/Dining/billy-jo-catbagan-HR1x0_5dakE-unsplash.jpg" alt="">
+                     <img src="{% static 'images/Dining/billy-jo-catbagan-HR1x0_5dakE-unsplash.jpg' %}" alt="">
                      <svg class="fix" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M72,88V40a8,8,0,0,1,16,0V88a8,8,0,0,1-16,0ZM216,40V224a8,8,0,0,1-16,0V176H152a8,8,0,0,1-8-8,268.75,268.75,0,0,1,7.22-56.88c9.78-40.49,28.32-67.63,53.63-78.47A8,8,0,0,1,216,40ZM200,53.9c-32.17,24.57-38.47,84.42-39.7,106.1H200ZM119.89,38.69a8,8,0,1,0-15.78,2.63L112,88.63a32,32,0,0,1-64,0l7.88-47.31a8,8,0,1,0-15.78-2.63l-8,48A8.17,8.17,0,0,0,32,88a48.07,48.07,0,0,0,40,47.32V224a8,8,0,0,0,16,0V135.32A48.07,48.07,0,0,0,128,88a8.17,8.17,0,0,0-.11-1.31Z"></path></svg>
                 <a href="">Dining Room</a>
                 </div>
                                 <div class="card">
-                     <img src="images/Office/olena-bohovyk-dIMJWLx1YbE-unsplash.jpg" alt="">
+                     <img src="{% static 'images/Office/olena-bohovyk-dIMJWLx1YbE-unsplash.jpg' %}" alt="">
                      <svg class="fix" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M248,64H8A8,8,0,0,0,8,80h8V192a8,8,0,0,0,16,0V144H224v48a8,8,0,0,0,16,0V80h8a8,8,0,0,0,0-16ZM32,80h88v48H32Zm192,48H136V80h88ZM96,104a8,8,0,0,1-8,8H64a8,8,0,0,1,0-16H88A8,8,0,0,1,96,104Zm64,0a8,8,0,0,1,8-8h24a8,8,0,0,1,0,16H168A8,8,0,0,1,160,104Z"></path></svg>
                <a href="">Home Office</a>
                 </div>
@@ -99,19 +105,19 @@
         <section class="shop-category">
             <div class="cards">
                 <div class="card">
-                     <img src="images/Living/pexels-the-ghazi-2152398165-32421758.jpg" alt="">
+                     <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
                 </div>
                     <div class="card">
-                     <img src="images/Living/pexels-the-ghazi-2152398165-32421758.jpg" alt="">
+                      <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
                 </div>
                                 <div class="card">
-                     <img src="images/Living/pexels-the-ghazi-2152398165-32421758.jpg" alt="">
+                      <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
                 </div>
                                 <div class="card">
-                     <img src="images/Living/pexels-the-ghazi-2152398165-32421758.jpg" alt="">
+                      <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
                 </div>
                
@@ -124,19 +130,19 @@
         <section class="shop-category">
             <div class="cards">
                 <div class="card">
-                     <img src="images/Living/pexels-the-ghazi-2152398165-32421758.jpg" alt="">
+                     <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
                 </div>
                     <div class="card">
-                     <img src="images/Living/pexels-the-ghazi-2152398165-32421758.jpg" alt="">
+                     <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
                 </div>
                                 <div class="card">
-                     <img src="images/Living/pexels-the-ghazi-2152398165-32421758.jpg" alt="">
+                     <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
                 </div>
                                 <div class="card">
-                     <img src="images/Living/pexels-the-ghazi-2152398165-32421758.jpg" alt="">
+                     <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
                 </div>
                
@@ -200,7 +206,8 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="{% static 'scripts/script.js' %}"></script>
     
+    {% endblock %}
 </body>
 </html>

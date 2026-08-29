@@ -5,12 +5,12 @@
 }
 @font-face {
     font-family: 'cormorant';
-    src: url("fonts/cormorant/Cormorant_Install_v0.2/CormorantInfant-Regular.otf");
+    src: url("../fonts/cormorant/Cormorant_Install_v0.2/CormorantInfant-Regular.otf");
 }
 
 @font-face {
     font-family: "manrope";
-    src: url("fonts/manrope/manrope-regular.otf");
+    src: url("../fonts/manrope/manrope-regular.otf");
 }
 
 /* Landing page css */
@@ -106,7 +106,7 @@ nav ul .nav-icon{
 .landing {
     margin-top: 0;
     background:  linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url('images/Living/pexels-slipcoverkas-27471120.jpg');
+    url('../images/Living/pexels-slipcoverkas-27471120.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100dvh;
