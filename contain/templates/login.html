@@ -13,10 +13,20 @@
    {% block content %}
     <main class="login">
         <section>
-           <form action="">
+           <form action="" method="POST">
+
+            {% csrf_token %}
     <h2>Syzygium Furniture</h2>
     <h3>Welcome back</h3>
     <h5>Sign in to your account</h5>
+
+    
+    {%if messages %}
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+    {% endif %}
+
 
     <div class="input-group">
         <input
@@ -24,6 +34,7 @@
             id="username"
             required
             placeholder=" "
+            name="username"
         >
         <label for="username">Username</label>
     </div>
@@ -34,11 +45,12 @@
             id="password"
             required
             placeholder=" "
+            name="password"
         >
         <label for="password">Password</label>
     </div>
 
-    <a href="{% url 'forgot' %}">Forgot password?</a>
+    <a href="{% url 'password_reset' %}">Forgot password?</a>
 
     <input type="submit" value="Sign in" class="button">
 

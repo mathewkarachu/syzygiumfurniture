@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+{% block content %}
+<form action="" method="POST">
+      {{ form.errors }}
+    {% csrf_token %}
+    <label for="pass" >password</label>
+    <input type="password" name="new_password1" id="pass">
+    <label for="con" >Confirm Password</label>
+    <input type="password" name="new_password2" id="con">
+    <input type="submit" value="submit">
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<main class="login">
+        <section>
+           <form action="" method="POST">
+
+            {% csrf_token %}
+    <h2>Syzygium Furniture</h2>
+    <h3>Password Reset Successful</h3>
+    <p>Your password has been reset successfully!! <br> Click the link below to sign up</p>
+ 
+    
+
+
+
+    <a href="{% url 'register' %}" class="success">Login  with your new password</a>
+
+{% endblock %}
