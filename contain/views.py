@@ -4,11 +4,16 @@ from django.contrib import messages
 from django.contrib.auth import login, logout,authenticate,decorators
 
 
+from .models import *
+
+
 import re
 
 @decorators.login_required
 def Home(request):
-    return render(request,"index.html")
+    products = Product.objects.all()
+    context = {'products': products}
+    return render(request,"index.html",context)
 
 def Login(request):
     

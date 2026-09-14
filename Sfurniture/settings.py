@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -116,16 +117,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
+
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
 
-MAILERS = {
-    'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
-    },
-}
 
 
 LOGIN_URL = "login"
@@ -137,12 +141,12 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
 
-import os
+
 from dotenv import load_dotenv
 
 load_dotenv()
 
-
+EMAIL_HOST_PASSWORD = os.getenv('PASSWORD')
 # email configuration
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"

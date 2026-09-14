@@ -104,10 +104,13 @@
          <h2 class="section-title">Popular Pieces</h2>
         <section class="shop-category">
             <div class="cards">
+                {% for product in products %}
                 <div class="card">
-                     <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
+                     <img src="{{product.image.url}}" alt="">
+                <p>{{product.name}}</p>
+                <p>{{product.price}}</p>
                 </div>
+                {% endfor %}
                     <div class="card">
                       <img src="{% static 'images/Living/pexels-the-ghazi-2152398165-32421758.jpg'%}" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero optio aliquid blanditiis voluptates itaque explicabo porro? Sed, esse perferendis, soluta ex sint facere, ullam iste sapiente consequuntur nisi architecto.</p>
