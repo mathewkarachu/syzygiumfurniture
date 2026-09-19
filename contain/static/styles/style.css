@@ -481,3 +481,16 @@ input{
     text-decoration: underline;
     text-align: center;
 }
+
+
+/* Category Pages */
+
+.landing-section{
+  .landing-section {
+    background-image: url("../images/Living/pexels-slipcoverkas-27471120.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+}

@@ -5,12 +5,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+
     <title>Home Page</title>
+
+    {% endblock %}
+
     <link rel="stylesheet" href="{% static 'styles/style.css' %}">
 </head>
 
 <body>
-    {% block content %}
+   
 
 
     <!--HEADER-->
@@ -30,12 +36,12 @@
                   <!-- Mobile menu content -->
         <div class="mobile-menu" id="mobileMenu">
             
-            <a href="/">Home</a>
+            <a href="{% url 'home' %}">Home</a>
             <a href="/shop/">Shop</a>
-            <a href="/living-room/">Living Room</a>
-            <a href="/bedroom/">Bedroom</a>
-            <a href="/office/">Office</a>
-            <a href="/dining/">Dining</a>
+            <a href="{% url 'living' %}">Living Room</a>
+            <a href="{% url 'bed' %}">Bedroom</a>
+            <a href="{% url 'office' %}">Office</a>
+            <a href="{% url 'dining' %}">Dining</a>
         </div>
             </li>
 
@@ -60,6 +66,10 @@
         </nav>
         
     </header>
+
+
+
+ {% block content %}
     <main>
         <!--HERP SECTION-->
         <section class="landing">
@@ -207,10 +217,10 @@
         </section>
       
     </footer>
-
+ {% endblock %}
 
     <script src="{% static 'scripts/script.js' %}"></script>
     
-    {% endblock %}
+   
 </body>
 </html>

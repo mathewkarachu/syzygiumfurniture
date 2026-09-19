@@ -114,3 +114,16 @@ def Logout(request):
     logout(request)
     return redirect("home")
 
+
+def Living(request):
+    return render(request,"living_room.html")
+
+def Bed(request):
+    return render(request,"bed_room.html")
+
+def Dining(request):
+    return render(request,"dining_room.html")
+
+def Office(request):
+    return render(request,"home_office.html")
+

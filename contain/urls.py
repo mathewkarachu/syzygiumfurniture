@@ -13,7 +13,11 @@ urlpatterns = [
     path('',views.Home, name="home"),
     path("login/",views.Login,name="login"),
     path("signup/",views.Signup,name="register"),
- 
+    path('category/living_room/', views.Living, name="living"),
+    path('category/dining_room/', views.Dining, name="dining"),
+    path('category/bed_room/', views.Bed, name="bed"),
+    path('category/home_office/', views.Office, name="office"),
+    
     
 ]
 
